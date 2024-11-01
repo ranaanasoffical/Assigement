@@ -1,0 +1,84 @@
+Question 1: Class Attendance using a List
+You are keeping track of student attendance using a list. Sometimes students may enter their names more than once.
+
+Step 1: Create a list called attendance_list with the names:
+
+["Anas", "Touqeer", "Saad", "Faraz", "Rehan", "Jabbar"]
+
+Step 2: Print the list to see the attendance.
+
+Step 3: Count how many names (including duplicates) are in the list and print the total number.
+
+
+# Solution 1:
+# Creating the attendance list
+attendance_list = ["Anas", "Touqeer", "Saad", "Faraz", "Rehan", "Jabbar"]
+
+# Printing the attendance list
+print("Attendance List:", attendance_list)
+
+# Counting the total number of names in the list (including duplicates)
+print("Total number of names (including duplicates):", len(attendance_list))
+     
+Attendance List: ['Anas', 'Touqeer', 'Saad', 'Faraz', 'Rehan', 'Jabbar']
+Total number of names (including duplicates): 6
+Question 2: Unique Attendance using a Set
+To find out how many unique students attended the class, use a set. A set automatically removes duplicates.
+
+Step 1: Convert the attendance_list from Question 1 into a set.
+Step 2: Print the set to see the unique student names.
+Step 3: Count and print the total number of unique students.
+
+# Solution 2:
+# Converting the attendance list to a set to remove duplicates
+unique_attendance_set = set(attendance_list)
+
+# Printing the unique attendance set
+print("Unique Attendance List:", unique_attendance_set)
+
+# Counting the total number of unique students
+print("Total number of unique students:", len(unique_attendance_set))
+
+     
+Unique Attendance List: {'Anas', 'Touqeer', 'Saad', 'Faraz'}
+Total number of unique students: 4
+Question 3: Storing Attendance Permanently with a Tuple
+A tuple is used when you don’t want the list to change. Let’s store the attendance in a tuple.
+
+Step 1: Create a tuple called attendance_tuple with these names:
+
+("Anas", "Touqeer", "Saad", "Faraz")
+
+Step 2: Print the tuple to display the names
+
+
+# Solution 3:
+# Creating a tuple called attendance_tuple
+attendance_tuple = ("Anas", "Touqeer", "Saad", "Faraz")
+
+# Printing the attendance tuple to display the names
+print("Attendance Tuple:", attendance_tuple)
+
+     
+Attendance Tuple: ('Anas', 'touqeer', 'Saad', 'Faraz')
+Question 4: Count Attendance using a Dictionary
+You want to count how many times each student attended the class.
+
+Step 1: Using the attendance_list from Question 1, create a dictionary where each student's name is a key, and the number of times they attended is the value.
+Step 2: Print the dictionary to see each student's attendance count.
+
+# Solution 4:
+# Creating a dictionary to count each student's attendance from attendance_list
+attendance_dict = {}
+for student in attendance_list:
+  if student in attendance_dict:
+        attendance_dict[student] += 1
+  else:
+        attendance_dict[student] = 1
+
+# Step 2: Printing the dictionary to see each student's attendance count
+print("Attendance Dictionary:", attendance_dict)
+
+     
+Attendance Dictionary: {'Anas': 2, 'Touqeer': 2, 'Saad': 1, 'Faraz': 1}
+That was it for my Assignment 2 of DSMP Fellowship. It included concepts like lists, sets, tuples and dictionaries in python and differnts
